@@ -8,7 +8,7 @@ var comments = [
 "Good place + good people + good food + good drinks = perfect. Nice interesting regular events. Super like."
 ];
 
-$(document).ready(function(){
+$(document).ready(function(){               /********** START JQUERY **********/
 
     var rand = Math.floor((Math.random() * comments.length)); 
 
@@ -47,8 +47,10 @@ $(document).ready(function(){
             if( $(window).scrollTop() > fixmeTop ) {
                     $('#main-nav-bar').css({position: 'fixed', top: '0px', display: 'block', right: 0});
                     $('.main-logo').css({position: 'fixed', top: '-15px', display: 'block', left: 30});
+                    $('#main-pic').css({"margin-top": "60px"});
             } else {
                     $('#main-nav-bar').css({position: 'static', top: '0px'});
+                    $('#main-pic').css({"margin-top": "0"});
             }
     });
 
@@ -108,33 +110,41 @@ $(document).ready(function(){
         if (num2 == 0) {
             num2 = totalPics;
         }
-    }   /********** End of SLIDER function **********/
+    }   /********** END of SLIDER function **********/
 
 
 
     /********** Creating a background div to show the menu **********/
 
-    var menuOn = false;
+    /* menuOn checks that there is no menu already displaying, so that divs don't add up */
+    var menuOn = false;             
 
-    $(".btn").click(function(event){
+    $(".btn").click(function(event){                /*********** When CLICK on FOOD/DRINKS button **********/
 
         if(!menuOn){
-            event.preventDefault();
-            var $newDiv = $("<div id=\"menu-backgr\">YESSSSSSSSSS</div>");
-            alert("Comida!");
 
+            event.preventDefault();
+
+            var $whichBtn = $(this).attr("id");
+            var $newDiv = $("<div id=\"menu-backgr\"></div>");
             var $food = $("#food-btn");
-            $food.before($newDiv);
+            var $drinks = $("#drinks-btn")
+
+            if ($whichBtn == "food-btn"){
+                alert("Comida!");
+                var $menuImg = $("<img class=\"menuimg\" src=\"img/menu01.jpg\" height=\"400\">");
+                $food.before($newDiv);
+                $(this).hide();
+                $newDiv.append($menuImg);
+            }
+            else {
+                alert("Coming soon!");
+            }
             menuOn = true;
         }
         else {
             menuOn = false;
         }
-    });
-
-}); /* ===== END of DOCUMENT.READY ===== */
-
-
-
-
-  
+    }); /********** END of CLICK function for FOOD and DRINKS buttons **********/
+    
+});     /* ===== END of DOCUMENT.READY ===== */  
