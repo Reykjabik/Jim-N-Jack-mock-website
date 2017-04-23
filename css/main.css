@@ -1,0 +1,324 @@
+/**********************************************
+***********************************************
+
+**************** JIM ´N´ JACKS ****************
+
+***********************************************
+********** created by: Javier Espin ***********
+***********************************************
+**********************************************/
+
+
+/*************** Style of tag elements ***************/
+
+body {
+
+	background-color: #111;
+	font-family: 'thyssen', serif;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+	margin:0;
+	text-align: center;
+	font-size: 6em;
+	color: #FFF;
+	padding-top: 230px;
+	text-shadow: 2px 4px 5px black;
+}
+
+/*************** PARALLAX EFFECT ***************/
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/cover.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+/****************************** HOME SECTION ******************************/
+
+.main-logo {
+	position: fixed;
+	top: -5px;
+	left: 30px;
+	z-index: 10;
+}
+
+.main-logo img {
+	width: 70%
+}
+
+/** The main H1 is up on line 26, within the tag elements CSS **/
+
+
+/********** Button that takes you to the menu section **********/
+
+.tour {
+	border: 3px solid white;
+	margin: 90px auto;
+	width: 150px;
+	color: white;
+	text-align: center;
+	font-size: 2.3em;
+	text-shadow: 2px 2px 2px black; 
+	box-shadow: 3px 3px 2px black;
+}
+
+.tour a {
+	text-decoration: none;
+	color: white;
+}
+
+.tour a:hover {
+	color: #F4F4F4;
+}
+
+/********** Bar that divides HOME and MENU sections **********/
+
+/************ It contains the navigation buttons *************/
+
+.bar {												/* White navigation bar class*/
+	height: 60px;
+	background-color: #eee;
+}
+
+#main-nav-bar{							/* The bar containing MENU / EVENTS / GALLERY / CONTACT */
+	width: 100%;
+	z-index: 5;
+	padding-top: 4px;
+}
+
+.main-header a {						/* COLOR of the navigation words */
+	color: #111;
+}
+
+.main-header a:hover {					/* COLOR of the navigation words when HOVERING */
+	color: #111;
+	color: #ff7256;
+	text-decoration: none;
+}
+
+#item-1 {
+	margin: auto;
+	flex-grow: 8;
+	text-align: left;
+	padding-left: 50px;
+}
+
+.bar h2 {			/* The "FOLLOW US ON" text before the social media links */
+	margin: 0;
+	font-family: 'thyssen', serif;
+	font-size: 2.5em;
+	text-align: right;
+	padding: 12px 10px 10px 0px;
+}
+
+.bar ul {										/* List of SOCIAL MEDIA ICONS */
+	margin: 0;										  /* List of WEB SECTIONS */
+	text-align: left;
+	padding: 0px 0 0 10px;
+	z-index: 3;
+	font-size: 2.5em;
+}
+
+.bar ul li {										  /* Elements of the list */
+	display: inline-block;	
+	margin: 0;
+	margin-right: 40px;
+	padding: 0;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.bar ul li a img {
+	width: 35px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+/******************** MENU SECTION ********************/
+
+.menu {
+	background: url("../img/main.jpg");
+	height: 100%;
+	background-size: cover;	
+	position: relative;
+	padding: 50px;
+}
+
+#menu-backgr{
+	background-color: rgba(220, 220, 220, 0.7);
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px auto;
+	border-radius: 8px;
+}
+
+.btn {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	font-size: 3em;
+}
+
+#food-btn {
+	left: 33%;
+}
+
+#drinks-btn {
+	right: 33%;
+}
+
+
+
+.events {
+	background-image: url("../img/events.jpg");
+	height: 100%;
+	background-size: cover;
+}
+
+#feedback-bar {
+	text-align: center;
+	font-size: 2em;
+	padding: 15px 20px 20px 20px;
+	height: auto;
+}
+
+#feedback-text {
+	margin-top: 10px;
+	text-align: center;
+	width: 60%;
+}
+
+/******************** GALLERY ********************/
+
+#menu-gallery{
+	height: 250px;
+}
+
+#piclist {											/***** FLEX CONTAINER *****/
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px;
+	margin: auto;
+	align-items: center;
+	height: 100%;
+}
+
+.arrow,
+.pictures {
+	align-self: center;
+}
+
+.pictures {											/***** FLEX ITEMS *****/
+	margin: 0;
+	flex: 2;
+	text-align: center;
+}
+
+.pictures img {
+	margin: 0 auto;
+}
+
+/******************** CONTACT ********************/
+
+.info {
+	height: 500px;
+	background-color: #fff;
+	text-align: center;
+}
+
+.info h2 {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.info p {
+	font-size: 2em;
+}
+
+.info ul li {
+	font-size: 1.4em;
+	list-style: none;
+	text-align: left;
+	margin-left: 23%;
+	margin-top: 2px;
+}
+
+/* With this code GoogleMaps becomes responsive and covers the whole div */
+
+.map {
+        position: relative;
+        padding-bottom: 37.1%; // This is the aspect ratio
+        height: 500px;
+        overflow: hidden;
+        background-color: #f00;
+    }
+.map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 500px !important;
+    }
+
+
+
+footer {
+	height: 400px;
+	text-align: center;
+	background-color: #111;
+	color: #eeffee;
+}
+
+footer > img {
+	margin: 0 auto;
+}
+
+.footer-list {
+	justify-content: center;
+}
+
+footer ul {
+	list-style: none;
+	margin-top: -20px;
+	margin-bottom: 45px;
+}
+
+footer li {
+	margin-right: 40px;
+}
+
+footer li img {
+	width: 40px;
+}
+
+@font-face {
+    font-family: thyssen;
+    src: url(../fonts/9THYSSEN.ttf);
+}

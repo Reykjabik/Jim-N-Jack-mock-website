@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Javier Espin">
+
+		<title>Jim 'N' Jack's</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700|Rufina:700" rel="stylesheet"> 
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		
+		<div class="parallax" id="home"> <!-- First background with just the introduction -->
+			<div class="main-logo" >
+				<a href="#"><img src="img/logofinal.png"/></a>
+			</div>
+			<h1>"Your go to place in Moscow"</h1>
+			<div class="tour"><a href="#main-nav-bar" class="scroll">Take a tour</a></div>
+		</div>
+
+		<div class="bar" id="main-nav-bar"> <!-- Navigation bar with logo and list of sections -->
+			<ul class="flex-container main-header">
+				<li id="item-1"></li>
+				<li><a href="#main-pic" id="menu-button" class="scroll">Menu</a></li>
+				<li><a href="#menu-events" id="events-button" class="scroll">Events</a></li>
+				<li><a href="#menu-gallery" id="gallery-button" class="scroll">Gallery</a></li>
+				<li><a href="#menu-contact" id="contact-button" class="scroll">Contact</a></li>
+			</ul>
+		</div>								   <!-- Navigation bar -->
+
+		<div class="menu" id="main-pic"> 						 <!-- Main picture -->
+			
+			<div class="tour btn" id="food-btn" onclick="showFood()"><a href="#">Food</a></div>
+			<div class="tour btn" id="drinks-btn"><a href="#">Drinks</a></div>
+
+		</div> 									 <!-- Main picture -->
+
+		<div class="bar" id="social-bar"> 					   <!-- Social bar -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<h2>Follow us on:</h2>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li><a href="https://www.facebook.com/jimnjacks/">
+							<img src="img/facebook.png"/></a></li>
+						<li><a href="https://vk.com/jimnjacks">
+							<img src="img/vk.png"/></a></li>
+						<li><a href="https://www.instagram.com/jim_n_jack/">
+							<img src="img/instagram.png" /></a></li>
+						<li><a href="https://twitter.com/jimnjackbar">
+							<img src="img/twitter.png" /></a></li>
+					</ul>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>								   <!-- Social bar -->
+
+		<div class="events" id="menu-events"> 		   <!-- Events -->
+			
+
+		</div> 										   <!--/Events -->
+
+		<div class="bar" id="feedback-bar">    <!-- Navigation bar -->
+			
+				<p id="feedback-text"></p>
+
+		</div>								   <!--/Navigation bar -->
+
+		<div id="menu-gallery"> 			  		  <!-- Gallery -->
+			<ul id="piclist">
+				<li class="arrow" id="prev">
+					<a href=""><img src="img/arrow_left.png"/></a>
+				</li>
+				<li class="pictures" id="pic1"><img src="img/img1.jpg" width="300px"/></li>
+				<li class="pictures" id="pic2"><img src="img/img2.jpg" width="300px"/></li>
+				<li class="pictures" id="pic3"><img src="img/img3.jpg" width="300px"/></li>
+				<li class="arrow" id="next">
+					<a href=""><img src="img/arrow_right.png"/></a>
+				</li>
+			</ul>
+		</div> 								  		 <!-- /Gallery -->
+
+		<div id="menu-contact"> 				<!-- Contact / Map -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-lg-4 info">
+						<h2>Contact</h2>
+						<p>Ulitsa Myasnitskaya, 38/1, Moscow</p>
+						<p>+7 (915) 143-40-46</p>
+						<p>jim.n.jack.bar@gmail.com</p>
+
+						<h2>Working hours</h2>
+						<ul>
+							<li>Monday: CLOSED</li>
+							<li>Tuesday: 18:00 - 02:00</li>
+							<li>Wednesday: 18:00 - 02:00</li>
+							<li>Thursday: 18:00 - 06:00</li>
+							<li>Friday: 18:00 - 06:00</li>
+							<li>Saturday: 18:00 - 06:00</li>
+							<li>Sunday: CLOSED</li>
+						</ul>
+
+					</div>
+					<div class="cold-md-8 col-lg-8 map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.564220366468!2d37.63802031558336!3d55.766071980556916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a66a913ed07%3A0x521956f89b406918!2sJim+&#39;N&#39;+Jack&#39;s+expat+bar!5e0!3m2!1ses!2ses!4v1492249565919" width="649" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+			</div>
+			
+		</div> 											 <!-- Contact / Map -->
+		
+		<footer> 												<!-- Footer -->
+			<img src="img/logowhite.png" width="25%" />
+			<ul class="flex-container footer-list">
+				<li><a href="https://www.facebook.com/jimnjacks/">
+					<img src="img/facebookwhite.png"/></a></li>
+				<li><a href="https://vk.com/jimnjacks">
+					<img src="img/vkwhite.png"/></a></li>
+				<li><a href="https://www.instagram.com/jim_n_jack/">
+					<img src="img/instagramwhite.png" /></a></li>
+				<li><a href="https://twitter.com/jimnjackbar">
+					<img src="img/twitterwhite.png" /></a></li>
+				<li><a href="https://twitter.com/jimnjackbar">
+					<img src="img/emailwhite.png" /></a></li>
+			</ul>
+			<p>Coded and designed by Jabi &copy 2017 </p>
+		</footer> 											   <!--/Footer -->
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
