@@ -9,7 +9,7 @@
 **********************************************/
 
 @font-face {
-	font-family: thyssen;
+	font-family: "thyssen";
 	src: url(fonts/9THYSSEN.TTF);
 }
 
@@ -18,7 +18,7 @@
 body {
 
 	background-color: #111;
-	font-family: thyssen, serif;
+	font-family: "thyssen", serif;
 }
 
 body, html {
