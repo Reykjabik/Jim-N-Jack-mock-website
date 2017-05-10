@@ -8,13 +8,17 @@
 ***********************************************
 **********************************************/
 
+@font-face {
+	font-family: thyssen;
+	src: url(fonts/9THYSSEN.TTF);
+}
 
 /*************** Style of tag elements ***************/
 
 body {
 
 	background-color: #111;
-	font-family: 'thyssen', serif;
+	font-family: thyssen, serif;
 }
 
 body, html {
